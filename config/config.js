@@ -1,3 +1,10 @@
+/*
+    File Name: config.js
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-07
+    Modified: 2022-10-21
+*/
 export const Secret = "MySecret";
 
 //connect to mongodb online database
