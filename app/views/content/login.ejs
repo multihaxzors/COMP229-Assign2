@@ -2,7 +2,8 @@
     <div class="row">
       <div class="offset-md-3 col-md-6 col-sm-12">
             <div class="login" id="contentArea">
-                <h1 class="display-4">Login</h1>
+                <h1>Login Page</h1>
+                <h3>Please enter your login information</h3><br><br>
   
                 <!-- Message Area -->
                 <% if(messages.length > 0) { %>
@@ -15,31 +16,29 @@
                   <div class="form-group mb-2">
                     <div class="input-group">
                       <span class="input-group-addon">
-                        <i class="fa fa-user">
-                        </i>
+                        <i class="fa fa-user-plus" aria-hidden="true"> </i>
                       </span>
                       <input type="text" class="form-control" id="username" name="username"  required
-                      value="" placeholder="Enter your username">
+                      value="" placeholder="Username">
                     </div>
                   
                   </div>
-  
+                  <br>
                   <div class="form-group mb-2">
                     <div class="input-group">
                       <span class="input-group-addon">
-                        <i class="fa fa-lock">
-                        </i>
+                        <i class="fa fa-key" aria-hidden="true"> </i>
                       </span>
                       <input type="password" class="form-control" id="password" name="password"  required
-                      value="" placeholder="Enter your password">
+                      value="" placeholder="Password">
                     </div>
                   
                   </div>                                        
                   <div class="text-end">
-                    <button id="loginButton" type="submit" class="btn btn-primary btn-lg">
-                      <i class="fas fa-sign-in-alt"></i> Login</button>
-                      <button id="cancelButton" type="reset" class="btn btn-warning btn-lg">
-                        <i class="fas fa-undo"></i> Cancel</button>
+                    <button id="loginButton" type="submit" class="btn btn-secondary btn-lg">
+                      <i class="fas fa-sign-in-alt"></i> <h5>Login</h5></button>
+                      <button id="cancelButton" type="reset" class="btn btn-danger btn-lg">
+                        <i class="fas fa-undo"></i><h5>Retry</h5></button>
                   </div>
                 </form>
               

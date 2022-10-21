@@ -1,5 +1,11 @@
+/*
+    File Name: contacts.route.server.ejs
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-21
+*/
 import { Router } from "express";
-
+//import Buisness Contacts function
 import {  DisplayContactsList, 
     DisplayContactsAddPage, 
     ProcessContactsAddPage, 
@@ -8,9 +14,10 @@ import {  DisplayContactsList,
     ProcessContactsDelete } from "../controllers/contacts.controller.server.js";
 
 import { AuthGuard } from "../utils/index.js";
-
+//create a new router
 const router = Router();
 
+//route each contact request function
 router.get('/contact-list', DisplayContactsList);
 router.get('/contact-add', AuthGuard, DisplayContactsAddPage);
 router.post('/contact-add', AuthGuard,ProcessContactsAddPage);

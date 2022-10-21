@@ -1,15 +1,18 @@
-import express from 'express';
+/*
+    File Name: auth.controller.server.ejs
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-21
+*/
 
-// need passport 
+
+//Import passport 
 import passport from 'passport';
-
-// need to include the User Model for authentication
-import User from '../models/user.js';
 
 // import DisplayName Utility method
 import { UserDisplayName } from '../utils/index.js';
 
-// Display Functions
+//Display LoginAuthFunction
 export function DisplayLoginPage(req, res, next){
     if(!req.user){
         return res.render('index', {title: 'Login', page: 'login', messages: req.flash('loginMessage'), displayName: UserDisplayName(req) });
@@ -18,7 +21,7 @@ export function DisplayLoginPage(req, res, next){
     return res.redirect('/contact-list');
 }
 
-// Processing Function
+//Process LoginAuthFunction
 export function ProcessLoginPage(req, res, next){
     passport.authenticate('local', function(err, user, info) {
         if(err){
@@ -43,6 +46,7 @@ export function ProcessLoginPage(req, res, next){
         
     })(req, res, next);
 }
+//Process LogoutRequest
 export function ProcessLogoutPage(req, res, next){
     req.logOut(function(err){
         if(err){

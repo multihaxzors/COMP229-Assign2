@@ -1,17 +1,25 @@
+/*
+    File Name: auth.route.server.ejs
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-21
+*/
 import { Router } from "express";
+//import authorization functions
 import { DisplayLoginPage,  
     ProcessLoginPage,
     ProcessLogoutPage} 
     from "../controllers/auth.controller.server.js";
 
+//create a new router
 const router = Router();
 
-// Display Login Router
+//display Login Router
 router.get('/login', DisplayLoginPage);
-// Process Login Page
+//process Login Page
 router.post('/login', ProcessLoginPage);
 
-// Process lougout 
+//process Logout request
 router.get('/logout', ProcessLogoutPage);
 
 

@@ -1,3 +1,9 @@
+/*
+    File Name: server.js
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-07
+*/
 import debug from 'debug';
 debug('comp-229');
 import http from 'http';

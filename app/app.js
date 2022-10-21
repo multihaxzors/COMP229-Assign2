@@ -1,3 +1,10 @@
+/*
+    File Name: app.js
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-07
+    Modified 2022-10-21
+*/
 // Third-Party Modules
 import express from 'express';
 import cookieParser from 'cookie-parser';

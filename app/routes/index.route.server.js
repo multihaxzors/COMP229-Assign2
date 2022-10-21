@@ -1,3 +1,9 @@
+/*
+    File Name: list.ejs
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-21
+*/
 import { Router } from "express";
 import { displayAboutPage, 
     displayContactPage, 

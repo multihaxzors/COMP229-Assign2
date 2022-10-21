@@ -1,3 +1,9 @@
+/*
+    File Name: index.route.server.js
+    Student Name: Jonathan Champ
+    Student ID: 301230592
+    Date: 2022-10-07
+*/
 import { UserDisplayName } from "../utils/index.js";
 
 export function displayHomePage(req, res, next) {
