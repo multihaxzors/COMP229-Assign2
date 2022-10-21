@@ -20,10 +20,8 @@ export function ProcessContactsAddPage(req, res, next){
     
     let newContact = contactModel({
         name: req.body.name,
-        year: req.body.year,
-        director: req.body.director,
-        genre: req.body.genre,
-        runtime: req.body.runtime
+        phonenumber: req.body.phonenumber,
+        email: req.body.email
     });
 
     contactModel.create(newContact, (err, Contact) => {
@@ -56,10 +54,8 @@ export function ProcessContactsEditPage(req, res, next){
     let newContact = contactModel({
         _id: req.body.id,
         name: req.body.name,
-        year: req.body.year,
-        director: req.body.director,
-        genre: req.body.genre,
-        runtime: req.body.runtime
+        phonenumber: req.body.phonenumber,
+        email: req.body.email
     });
 
     contactModel.updateOne({_id: id }, newContact, (err, Contact) => {
